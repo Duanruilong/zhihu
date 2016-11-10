@@ -1,0 +1,45 @@
+<!--遮罩-->
+<view class="mask" style="display:{{slideFlag?'block':'none'}}" bindtap="changeFlag"> </view>
+
+
+<!--tab-btn-->
+<view class="tab-btn" bindtouchstart="dragstart" bindtouchmove="dragmove" style="left:{{dragM.x}}px;top:{{dragM.y}}px;">
+    <image src="../../img/1.png"/>
+</view>
+
+
+<!--侧导航-->
+<view style="height:{{screenHeight}}px" class="ce-box {{slideFlag?'ce-show':'ce-hide'}}">
+  <view class="log-box">
+      <image class="log-img" src="{{userInfo.avatarUrl}}"/>
+      <text>{{userInfo.nickName}}</text>
+  </view>
+  <!--设置-->
+  <view class="slice">
+        <view class="fav">
+            <image src="../../img/cang.png"/>
+            <text>收藏</text>
+        </view>
+        <view class="fav">
+            <image src="../../img/she.png"/>
+            <text>设置</text>
+        </view>
+        <view class="fav">
+            <image src="../../img/ye.png"/>
+            <text>首页</text>
+         </view>
+  </view>
+  
+  <!--list-->
+  <view class="them-list">
+       <block wx:for="{{themeData}}">
+             <navigator url="../them/them?id={{item.id}}">
+                <text>{{item.name}}</text>
+                 <text>22222</text>
+            </navigator>
+        </block>
+  </view>
+  
+</view>
+
+

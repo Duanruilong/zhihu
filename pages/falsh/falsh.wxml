@@ -1,0 +1,5 @@
+<!--闪屏页-->
+<view class="falsh">
+    <image src="{{imgData.img}}"/>
+    <text>知乎日报 - 每天 3 次，每次 7 分钟</text>
+</view>

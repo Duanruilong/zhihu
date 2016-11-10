@@ -1,0 +1,22 @@
+<include src="../tpls/tpls.wxml" />
+<scroll-view scroll-y="true" style="hright:{{screenHeight}}px;">
+    <view class="banner">
+        <image src="{{themeList.image}}"/>
+        <text>{{themeList.description}}</text>
+    </view>
+     <import src="../tpls/item.wxml" />
+    <view class="list">
+        <view>
+            <text>主编</text>
+           <block wx:for="{{themeList.editors}}">
+                <navigator>
+                    <image src="{{item.avatar}}" />
+                </navigator>
+           
+           </block>
+        </view>
+        <block>
+            <template is="item" data="{{...themeList.stories}}" />
+         </block>
+    </view>
+</scroll-view>

@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/falsh/falsh",
+    "pages/index/index",
+     "pages/show/show",
+    "pages/them/them"
+   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#00A2ED",
+    "navigationBarTitleText": "知乎日报",
+    "navigationBarTextStyle":"#fff"
+  }
+}

@@ -1,0 +1,8 @@
+<template name="item">
+   <navigator class="list-item" url="../show/show?id={{item.id}}">
+     <view class="list-it">
+        <text>{{item.title}}</text>
+        <image src="{{item.images[0]}}" mode="aspectFill" />
+    </view>
+   </navigator>
+</template>

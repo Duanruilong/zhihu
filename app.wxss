@@ -1,0 +1,196 @@
+
+/**app.wxss**/
+.container {
+  height: 100%;
+  box-sizing: border-box;
+} 
+
+/*遮罩*/
+.mask{
+  position: fixed;
+  top: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  z-index:100;
+}
+
+/*闪屏页*/
+.falsh{
+  width:100%;
+  height:100%;
+}
+.falsh image{
+  width:100%;
+  height:100%;
+  display:block;
+  position:absolute;
+  transition:2s ease-in ;
+
+}
+.falsh text{
+  position:absolute;
+  width:100%;
+  height:50px;
+  background:rgba(0,0,0,0.3);
+  color:#fff;
+  bottom:40px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px
+}
+
+/*侧导航*/
+
+.ce-box{
+  width: 80%;
+  height:100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index:1002;
+  background: #eee;
+  /*box-shadow: 0 0 5px #000;*/
+  transition: all 500ms;
+}
+.ce-show{
+  transform: translate3d(0,0,0)
+}
+.ce-hide{
+  transform: translate3d(-100%,0,0)
+}
+.log-box{
+  height: 100px;
+  width:100%;
+  background:#444
+}
+.log-box image{
+  width: 60px;
+  height: 60px;
+  border-radius:50%;
+  border:2px solid #fff;
+  margin:18px 15px;
+  float: left;
+
+}
+.log-box text{
+  color:#fff;
+   float: left;
+   margin-top: 60px;
+   font-size: 18px;
+}
+.slice:befor{
+  content: '';
+  display: block;
+  clear: both;
+}
+.slice{
+  width:100%;
+  height:40px;
+  background:#444;
+  border-top:2px solid rgba(0,0,0,0.4)
+}
+.fav{
+  width:33.333333%;
+  float:left;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+
+}
+.fav image{
+  width:25px;
+  height:25px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+.fav text{
+  color: #fff;
+  font-size: 16px;
+   vertical-align: middle;
+}
+
+/*them-list*/
+.them-list{
+  width: 100%;
+  height: 50px;
+}
+.them-list navigator{
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #555;
+  padding: 0 16px;
+  border: 1px solid blue
+  
+}
+.them-list navigator:before{
+  content:"";
+  display: block;
+  clear:both;
+}
+.them-list navigator:after{
+  content:"+";
+  float: right;
+  font-weight: bold;
+  line-height: 34px;
+  font-size: 20px;
+}
+
+
+
+
+
+/*按钮*/
+.tab-btn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9999;
+  background:#00A2ED;
+ 
+}
+.tab-btn image{
+   width: 30px;
+  height: 30px;
+  padding: 5px;
+}
+
+
+/*banner-list*/
+.list{
+  width: 90%;
+  margin: 20px 16px;
+}
+.list text{
+  display: block;
+   margin-bottom: 20px
+}
+.list-item{
+  height: 110px;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 10px;
+  position: relative;
+  display: block;
+  box-shadow: 0 0 5px #777;
+  border-radius: 3px;
+}
+.list-it{
+   height: 110px;
+   
+   width:63%;
+   padding: 20px 10px;
+   font-size: 18px;
+  font-weight: bold;
+}
+
+.list-it image{
+      width: 90px;
+      height: 90px;
+       position: absolute;
+       right: 0;
+       top: 0;
+       margin: 10px 10px
+}
